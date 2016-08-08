@@ -8,7 +8,7 @@ FullData <- read.table("household_power_consumption.txt", header=TRUE,sep=";", s
 ReqData <- FullData[FullData$Date %in% c("1/2/2007","2/2/2007") ,]
 
 ## Code to develop plot 1.png and save the file.
-
+str(ReqData) ## check the structure in order to understand the data frame
 ## Segregate the Global Active Power into numeric data
 GlobalActivePower <- as.numeric(ReqData$Global_active_power)
 
